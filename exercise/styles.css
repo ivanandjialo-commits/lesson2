@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+h1{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
+.img-fluid{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#main-title{
+    color: purple;
+    font-size: 40px;
+}
+.title{
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    border: 15px solid blue;
+    border-radius: 50px;
+    margin: 100;
+    padding: 40px; /* 里面*/
+    width: 300; 
+}

@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+}
+.first{
+    background-color: green;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.second{
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+}
+.third{
+    background-color: red;
+    width: 100%;
+    height: 200px;
+}
+.box{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
