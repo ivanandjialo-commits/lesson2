@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+            width: 100%;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding: 20px;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            display: flex;
+            flex-direction: column;
+            background-color: #ddd;
+            width: 200px;
+            min-height: calc(100vh - 100px); 
+        }
+        h2{
+            padding: 16px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 16px;
+            margin-bottom: 0;
+        }
+        .main{
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+        }
+        footer{
+            background-color: #f0f0f0;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Layout</h1>
+
+    <div class="container">
+        <div class="side">
+            <h2>Navigration</h2>
+            <a href="#">Dashboard</a>
+            <a href="#">Project</a>
+            <a href="#">Tasks</a>
+            <a href="#">Calendar</a>
+            <a href="#">Peports</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="main">
+            <h2>Main Content Area</h2>
+            <p>This is a  sidebar layout with a flexible main content created using Flexbox</p>
+    </div>
+    </div>
+
+    <footer>
+        © 2026 fifa world cup
+    </footer>
+</body>
+</html>

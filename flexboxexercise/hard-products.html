@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+        }
+        .products {
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .filter{
+            flex: 10%;
+            background-color: green;
+            flex-direction: column;
+            width: 200px;
+            min-height: calc(100vh - 100px);
+            padding: 16px;
+        }
+        hr{
+            width: 200px;
+            margin: 0;
+        }
+        .cart{
+            flex: 70%;
+            padding: 20px;
+            justify-content: space-between;
+            
+        }
+        .card{
+            width: 270px;
+            background-color: #a06060;
+            border: 1px solid white;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .card-content{
+            padding: 20px;
+        }
+        .price{
+            color: red;
+        }
+        .premium{
+            color: lightgray;
+        }
+        button{
+            background-color: aqua;
+            color: white;
+            border: 1px solid aqua;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="products">Our products</h1>
+    <p class="products">Explore our wide range of high-quality products designed to make </p>
+
+    <div class="container">
+        <div class="filter">
+            <h2>Filter Products</h2>
+            <hr>
+            <h3>Categories</h3>
+            <input type="checkbox">
+            <label for="">All products</label><br>
+            <input type="checkbox">
+            <label for="">Electronics</label><br>
+            <input type="checkbox">
+            <label for="">Clothing</label><br>
+            <input type="checkbox">
+            <label for="">Home & Kitchen</label><br>
+            <input type="checkbox">
+            <label for="">Sports & Outdoors</label>
+
+            <h2>Price Range</h2>
+            <input type="checkbox">
+            <label for="">under $25</label><br>
+            <input type="checkbox">
+            <label for="">$25 - $50</label><br>
+            <input type="checkbox">
+            <label for="">$50 - $100</label><br>
+            <input type="checkbox">
+            <label for="">$100 - $200</label><br>
+            <input type="checkbox">
+            <label for="">$250 - above</label><br>
+        </div>
+
+        <div class="cart">
+            <div class="card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <div class="card-content">
+                <h2>Wireless Headphone</h2>
+                <h2 class="price">$129.99</h2>
+                <p class="premium">Premium wireless headphones with noise cancellation and 30-hour battery life</p>
+                <button>Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
