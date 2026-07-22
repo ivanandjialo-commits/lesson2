@@ -16,32 +16,38 @@
             flex-wrap: wrap;
         }
         .filter{
-            flex: 10%;
-            background-color: green;
-            flex-direction: column;
-            width: 200px;
+            background-color: lightcyan;
+            width: 250px;
+            min-width: 250px;
             min-height: calc(100vh - 100px);
-            padding: 16px;
+            padding: 20px;
         }
         hr{
             width: 200px;
             margin: 0;
         }
         .cart{
-            flex: 70%;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
             padding: 20px;
-            justify-content: space-between;
+            gap: 20px;
             
         }
         .card{
-            width: 270px;
+            width: 300px;
+            min-width: 300px;
             background-color: #a06060;
             border: 1px solid white;
             border-radius: 20px;
-            overflow: hidden;
+            overflow: hidden; 
         }
         .card-content{
             padding: 20px;
+        }
+        .card img{
+            width: 100%;
+            display: block;
         }
         .price{
             color: red;
@@ -102,7 +108,51 @@
                 <button>Add to Cart</button>
                 </div>
             </div>
-            
+            <div class="card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <div class="card-content">
+                <h2>Smart watch</h2>
+                <h2 class="price">$199.99</h2>
+                <p class="premium">Track you fitness, receive notifications, and more with this feature-packed smart watch</p>
+                <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <div class="card-content">
+                <h2>Bluetooth Speaker</h2>
+                <h2 class="price">$79.99</h2>
+                <p class="premium">Portable Bluetooth speaker with amazing sound quality nad 12-hour battery life.</p>
+                <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <div class="card-content">
+                <h2>Running Shoes</h2>
+                <h2 class="price">$89.99</h2>
+                <p class="premium">Lightweight and comfortable running shoes for ypur daily workout routine</p>
+                <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <div class="card-content">
+                <h2>Coffee Maker</h2>
+                <h2 class="price">$59.99</h2>
+                <p class="premium">Automatic coffee maker that with the press of a button.</p>
+                <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src=" https://placehold.co/300x200" alt="">
+                <div class="card-content">
+                <h2>Backpack</h2>
+                <h2 class="price">$49.99</h2>
+                <p class="premium">Durable backpack with the multiple compartments, perfect for school or travel</p>
+                <button>Add to Cart</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
