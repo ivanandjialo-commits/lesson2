@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: #495fca;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            padding: 20px;
+            border: 1px solid #999;
+        }
+        p{
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .container{
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            height: 200px;
+            border: 1px solid black ;
+        }
+        .absolute-box{
+            position: absolute;
+            right: 16px;
+            background-color: lightcoral;
+            color: white;
+            width: 150px;
+            padding: 20px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <header>Fixed Position Header</header>
+    <br><br>
+    <br><br> 
+    <div class="content">
+        <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+        <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+        <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+        <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+			  <p>This is additional content to create scrolling.</p>
+    </div>
+    <br>
+    <div class="container">
+        This is a relatively positioned container
+        <div class="absolute-box">
+            This box is absolutely positioned
+        </div>
+    </div>
+</body>
+</html>
