@@ -5,20 +5,124 @@
     <!-- Load your css file here -->
      <style>
         body{
-            margin: auto;
+            margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
         .fixed-header{
+            position: fixed;
+            top: 0;
             background-color: lightblue;
+            width: 97%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            z-index: 1000;
         }
-        ul{
-            list-style-type: none;
-            display: block;
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
         }
-        li a{
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+        nav ul li{
+            margin-left: 10px;
+        }
+        nav a{
             text-decoration: none;
-            
+            color: white;
+            padding: 8px;
+        }
+        nav a:hover{
+            background-color: orange;
+            padding: 20px;
+        }
+        .floating-button{
+            position: fixed;
+            background: lightblue;
+            border-radius: 50%;
+            border: 2px solid white;
+            color: white;
+            width: 60px;
+            height: 60px;
+            right: 30px;
+            bottom: 20px ;
+            font-size: 30px;
+        }
+        .page-container{
+            display: flex;
+            margin-top: 80px;
+        }
+        .sticky-sidebar{
+            width: 200px;
+            height: 200px;
+            top: 110px;
+            background-color: #ccc;
+            position: sticky;
+            padding: 20px;
+        }
+        .sticky-sidebar h2{
+            margin-bottom: 20px;
+        }
+        .sticky-sidebar ul{
+            list-style: none;
+            padding: 0;
+        }
+        .sticky-sidebar li{
+            margin: 15px 0;
+        }
+        .sticky-sidebar a{
+            text-decoration: none;
+            color: blue;
+        }
+        .content{
+            flex: 1;
+            padding: 30px;
+            background-color: white;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        .overlapping-section{
+            position: relative;
+            height: 300px;
+            margin: 30px 0;
+        }
+        .box{
+            display: flex;
+            position: absolute;
+            width: 180px;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            top: 50px;
+            left: 50px;
+            background-color: lightcoral;
+            z-index: 1;
+        }
+        .box2{
+            top: 100px;
+            left: 100px;
+            background-color: lightblue;
+            z-index: 2;
+        }
+        .box3{
+            top: 150px;
+            left: 150px;
+            background-color: lightgreen;
+            z-index: 3;
+        }
+        footer{
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            color: white;
         }
      </style>
 </head>
@@ -38,6 +142,7 @@
     <div class="page-container">
         <aside class="sticky-sidebar">
             <h2>Sidebar</h2>
+            <hr style=" background-color: lightblue; height: 1px;">
             <ul>
                 <li><a href="#">Link 1</a></li>
                 <li><a href="#">Link 2</a></li>
