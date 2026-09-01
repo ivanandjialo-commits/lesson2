@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Challenge</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading">Challenge</h1>
+  <p id="description">Use JavaScript to modify this webpage</p>
+  <div id="container">
+    <div id="box"></div>
+  </div>
+  <script>
+    let heading = document.getElementById("heading"); 
+    heading.textContent = "DOM Manipulation Challenge";
+
+    let description = document.getElementById("description");
+    description.textContent = "Use JS to modify this webpage";
+
+    let div = document.getElementById("box");
+    div.style.backgroundColor = "blue";
+
+    let button = document.createElement("button"); // create new button
+    button.textContent = "Click Me";
+
+    let container = document.getElementById("container"); // html find container
+    container.appendChild(button); // put the button inside container
+  </script>
+</body>
+</html>
