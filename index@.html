@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUCK YOU!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: radial-gradient(circle, #252044, #080808);
+            overflow: hidden;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            white-space: nowrap;
+            will-change: transform;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: clamp(40px, 10vw, 110px);
+            font-weight: 900;
+
+            background: linear-gradient(
+                45deg,
+                #ff0055,
+                #ff00ff,
+                #7000ff,
+                #ff0055
+            );
+
+            background-size: 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            filter: drop-shadow(0 0 15px #ff00ff);
+
+            animation: color 2s infinite linear,
+                       shake 0.12s infinite alternate;
+        }
+
+        @keyframes color {
+            from {
+                background-position: 0%;
+            }
+
+            to {
+                background-position: 300%;
+            }
+        }
+
+        @keyframes shake {
+            from {
+                transform: rotate(-5deg);
+            }
+
+            to {
+                transform: rotate(5deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text" id="text">
+        <h1>FUCK YOU!</h1>
+    </div>
+
+    <script>
+        const text = document.getElementById("text");
+
+        function moveText() {
+
+            let x = (Math.random() - 0.5) * 350;
+            let y = (Math.random() - 0.5) * 250;
+
+            text.style.transform =
+                `translate(calc(-50% + ${x}px),
+                calc(-50% + ${y}px))`;
+        }
+
+        setInterval(moveText, 250);
+
+    </script>
+
+</body>
+</html>
